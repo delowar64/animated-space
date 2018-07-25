@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.animation_wrap{
+    position: relative;
+    height: 100%;
+}
+
+.circles_wrap{
+    position: relative;
+    height: 600px;
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #5A29B7;
+    background: radial-gradient(#896BE8, #5A29B7);
+    overflow: hidden;
+}
+
+.circles_wrap .oval{
+    background: rgba(0, 0, 0, .06);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-radius: 50%;
+    animation: oval 50s infinite linear
+}
+
+.circles_wrap .oval > div{
+    animation: oval_reverse 50s infinite linear;
+    font-size: 48px;
+}
+
+.circles_wrap .oval > div .icofont{
+    display: block;
+    color: rgba(76, 34, 155, 0.7);
+}
+
+@keyframes oval  {
+    from{
+        transform:  translate(-50%, -50%) rotate(0deg)
+    }
+    to{
+        transform:  translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+@keyframes oval_reverse  {
+    from{
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(-360deg)
+    }
+}
+
+@keyframes icon  {
+    from{
+        transform:  rotate(0deg)
+    }
+    to{
+        transform:  rotate(360deg)
+    }
+}
+
+@keyframes icon_reverse  {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(-360deg)
+    }
+}
+
+.oval img{
+    height: 30px;
+    width: 30px;
+}
+
+.circles_wrap .oval_1{
+    height: 120px;
+    width: 120px;
+}
+.circles_wrap .oval_1 > div{
+    animation: icon_reverse 50s infinite linear
+}
+
+.circles_wrap .oval_2{
+    height: 350px;
+    width: 350px;
+    animation: oval_reverse 70s infinite linear
+}
+.circles_wrap .oval_2 > div{
+    animation: icon 70s infinite linear;
+    font-size: 52px;
+}
+
+.circles_wrap .oval_3{
+    height: 570px;
+    width: 570px;
+    animation: oval 90s infinite linear
+}
+.circles_wrap .oval_3 > div{
+    animation: icon_reverse 90s infinite linear;
+    font-size: 64px;
+}
+
+.circles_wrap .oval_4{
+    height: 810px;
+    width: 810px;
+    animation: oval_reverse 110s infinite linear
+}
+.circles_wrap .oval_4 > div{
+    animation: icon 110s infinite linear;
+    font-size: 72px;
+}
+
+.circles_wrap .oval_5{
+    height: 1090px;
+    width: 1090px;
+    animation: oval 130s infinite linear
+}
+.circles_wrap .oval_5 > div{
+    animation: icon_reverse 130s infinite linear;
+    font-size: 82px;
+}
+
+.circles_wrap .oval_6{
+    height: 1430px;
+    width: 1430px;
+    animation: oval_reverse 160s infinite linear
+}
+.circles_wrap .oval_6 > div{
+    animation: icon 160s infinite linear;
+    font-size: 92px;
+}
+
+.circles_wrap .oval_7{
+    height: 1820px;
+    width: 1820px;
+    animation: oval 180s infinite linear
+}
+.circles_wrap .oval_7 > div{
+    animation: icon_reverse 180s infinite linear;
+    font-size: 102px;
+}
+
+
+.oval > div{
+    position: absolute;
+}
